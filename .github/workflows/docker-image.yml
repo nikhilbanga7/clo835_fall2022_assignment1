@@ -28,9 +28,8 @@ jobs:
       with:
         # The AWS access key id
         access_key_id: ASIAZTVGSY6RYTVEMSG5
-        account_id: "660700579747"
+        account_id: 660700579747
         # The AWS secret access key
         secret_access_key: gS2m61P0CkSxxH/L4AM05qbu7FrzYiZOslvLHcNC
         repo: assignment1ecr
         region: us-east-1
-	      
