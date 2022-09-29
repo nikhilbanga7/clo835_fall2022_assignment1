@@ -30,19 +30,8 @@ jobs:
         access_key_id: ASIAZTVGSY6R6NBRTSVZ
         # The AWS secret access key
         secret_access_key: Cq6ZXy+YSuRxn49Diwf/riL3L55aXk8v0HUgqTwQ
-        # AWS Account ID
-        # account_id: 
-        # A role to assume under the account_id account.
-        # Name of your ECR repository
+        aws_session_token: FwoGZXIvYXdzEKT//////////wEaDCs8qDmiDW6hsRKnfiK9AUJ4+SVdZC2jZGiZWJ/N825V/9IGdJOBl0QDrG70BRRF2KhC4fR43PlyhBYnx1PLQvwl8r1nFBjFehz6ltzBKrl6BFsNNKEK4akhM2EtC50oD5ama1V5OD+2P5VOL76x+n1luXuFzvkW65lPxn1MUV+I0vkiXmc22iN7UkZJ+mdk5boS0B4BIpO6I5gr7UOmNjMociDgAnFRkYqRzSat0FDpeKOUuEbeutL1zg7Fdn7ulESqwjDKO7TulCHWhyijwNeZBjItZdTzCIXIwFAoHHIvyuN1SutuR06EJuAnkqvv+7HhHNrvrozJSg8b90FY03FT
         repo: bar
         # The AWS region
         region: us-east-1
-        # Set this to true to create the repository if it does not already exist
-        # Set this to true to set a policy on the repository
-        # Set this to repository policy statement json file. only used if the set_repo_policy is set to true
-        # Comma-separated string of ECR image tags
-        # Name of Dockerfile to use
-        # Extra flags to pass to docker build (see docs.docker.com/engine/reference/commandline/build)
-        # Images to use as cache for the docker build (see `--cache-from` argument docs.docker.com/engine/reference/commandline/build)
-        # Path to Dockerfile, defaults to the working directory
-        # Relative path from top-level to script to run before Docker build
+     
