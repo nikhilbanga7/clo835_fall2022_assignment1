@@ -19,12 +19,17 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file Dockerfile_mysql --tag mysql
-    - name: Amazon ECR "Login" Action for GitHub Actions
-  # You may pin to the exact commit or the version.
-  # uses: aws-actions/amazon-ecr-login@9149ade017c57f86dea2f76a01f8b2d5bd06b10f
-      uses: aws-actions/amazon-ecr-login@v1
+    - name: Deploy to ECR
+      # You may pin to the exact commit or the version.
+      # uses: rahulrkr08/gh-aws-deploy@790400a8501a2626d17d7a3c230a3355a90835d0
+      uses: rahulrkr08/gh-aws-deploy@v3
       with:
-        registries: 660700579747.dkr.ecr.us-east-1.amazonaws.com/assignment1ecr
+        # Access key for IAM User.
+        access-key-id: ASIAZTVGSY6R6LS3IJVT
+        # Secret access key for IAM User.
+        secret-access-key: bwMty1+g15/jihT8BYFKctvtJhpDFlcxAbLHH5/R
+        # AWS Region to use.
+        region: us-east-1
       
     - name: AWS ECR
   # You may pin to the exact commit or the version.
