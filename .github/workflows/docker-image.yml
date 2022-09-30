@@ -25,7 +25,7 @@ jobs:
       uses: aws-actions/amazon-ecr-login@v1
       with:
         # A comma-delimited list of AWS account IDs that are associated with the ECR Private registries. If you do not specify a registry, the default ECR Private registry is assumed. If 'public' is given as input to 'registry-type', this input is ignored.
-        registries: 660700579747
+        registries: 660700579747.dkr.ecr.us-east-1.amazonaws.com/assignment1ecr
 
       
     - name: AWS ECR
