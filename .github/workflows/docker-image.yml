@@ -31,5 +31,6 @@ jobs:
         account_id: 660700579747
         # The AWS secret access key
         secret_access_key: bwMty1+g15/jihT8BYFKctvtJhpDFlcxAbLHH5/R
+        aws_session_token: FwoGZXIvYXdzEKf//////////wEaDAWuAybp1S7oQsrywSK9AXqK0bJnoib7XVhCv5h4pd41u31XCnJCE05HZD4c3jaJkxFEFbM7YhUCshg/PEmU8LTTBR259JkqgqB5U+2BtaCafawLLCFJlTJHfw3Or0nlHYyZ0BP7eV7rSyZC0y+y6HSAsFRZRVYIb02pgx5tEqJKr+IpJ7vcFnEuLF//+uHIuRheYYAkV5cD0TeEU8Ny9F1iaTGwo2SOd9Lh4tyYcnvQxhJwr8Eio2gnoN0bGqL7KBT3H/AXV/DIh1UPWCiJqdiZBjItZvI4dY6dnny+WuhcHnqsBVJW1Nsv5aN9LFIgZ4ROnYqPq16t5uFCgkAnVLtT
         repo: assignment1ecr
         region: us-east-1
