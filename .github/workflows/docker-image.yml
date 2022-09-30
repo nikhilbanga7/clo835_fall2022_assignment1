@@ -27,9 +27,9 @@ jobs:
       uses: kciter/aws-ecr-action@v4
       with:
         # The AWS access key id
-        access_key_id: ASIAZTVGSY6RYTVEMSG5
+        access_key_id: ASIAZTVGSY6R6LS3IJVT
         account_id: 660700579747
         # The AWS secret access key
-        secret_access_key: gS2m61P0CkSxxH/L4AM05qbu7FrzYiZOslvLHcNC
+        secret_access_key: bwMty1+g15/jihT8BYFKctvtJhpDFlcxAbLHH5/R
         repo: assignment1ecr
         region: us-east-1
