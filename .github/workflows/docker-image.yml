@@ -23,6 +23,8 @@ jobs:
   # You may pin to the exact commit or the version.
   # uses: aws-actions/amazon-ecr-login@9149ade017c57f86dea2f76a01f8b2d5bd06b10f
       uses: aws-actions/amazon-ecr-login@v1
+      with:
+        region: us-east-1
       
     - name: AWS ECR
   # You may pin to the exact commit or the version.
