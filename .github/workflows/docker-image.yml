@@ -30,7 +30,8 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: assignment1ecr
-        IMAGE_TAG: v0.1, v1.1
+        IMAGE_TAG: v0.1
+        IMAGE_TAG1: v1.1
       run: |
         #cd nikhilbanga7/clo835_fall2022_assignment1
         #ls -ltra
