@@ -31,7 +31,7 @@ jobs:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: assignment1ecr
         IMAGE_TAG: v0.1
-        IMAGE_TAGS: v1.1
+        IMAGE_TAG1: v1.1
         
       run: |
         #cd nikhilbanga7/clo835_fall2022_assignment1
@@ -42,10 +42,10 @@ jobs:
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG1 --file Dockerfile_mysql .
         # Unit test
         docker run -d -p 80:8080 --name nodeapp $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-        docker run -d -p 81:8080 --name mydb $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAGS
+        docker run -d -p 81:8080 --name mydb $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG1
         docker ps
         echo "Pause for 10 seconds to let container start"
         sleep 10
         
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAGS
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG1
