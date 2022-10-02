@@ -28,7 +28,7 @@ jobs:
 
     - name: Build, test, tag, and push image to Amazon ECR
       env:
-        ECR_REGISTRY: 660700579747.dkr.ecr.us-east-1.amazonaws.com/assignment1ecr
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: assignment1ecr
         IMAGE_TAG: v0.1
       run: |
