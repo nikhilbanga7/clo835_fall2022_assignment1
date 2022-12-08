@@ -29,7 +29,7 @@ jobs:
     - name: Build, test, tag, and push image to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: assignment3ecr
+        ECR_REPOSITORY: finalproject
         IMAGE_TAG: v0.2nodeapp
         IMAGE_TAG1: v1.1mysql
         
